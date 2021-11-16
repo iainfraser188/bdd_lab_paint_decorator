@@ -14,4 +14,8 @@ Decorator.prototype.calculatePaint = function() {
     return total;
 };
 
+Decorator.prototype.checkEnoughPaint = function(room) {
+    return room.area <= this.calculatePaint();
+};
+
 module.exports = Decorator;
